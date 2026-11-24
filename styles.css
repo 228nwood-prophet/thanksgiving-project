@@ -1,0 +1,81 @@
+
+body {
+    background-color: #fff3df;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    background-color: #9b4b19;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+h2 {
+    color: #9b4b19;
+}
+
+nav {
+    background-color: #653313;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #9b4b19;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #653313;
+}
+
+.carousel img {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.food {
+    background-color: white;
+    display: inline-block;
+    width: 220px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.food img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+#home, #foods, #favorites, #quiz {
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid #d5a36b;
+    margin: 20px;
+}

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thanksgiving</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Happy Thanksgiving!</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#foods">Foods</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <div id="home">
+        <h2>Welcome to Thanksgiving!</h2>
+        <p>Thanksgiving is a holiday where families and friends come together to enjoy food and spend time together.</p>
+    </div>
+
+    <hr>
+
+    <h2>Thanksgiving Pictures</h2>
+
+    <div class="carousel">
+        <img id="slide" src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=800" alt="Thanksgiving food">
+
+        <br>
+
+        <button onclick="previousSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <hr>
+
+    <div id="foods">
+        <h2>Popular Thanksgiving Foods</h2>
+
+        <div class="food">
+            <img src="featured-thanksgiving-turkey-recipe.jpg" alt="Roasted turkey">
+            <h3>Turkey</h3>
+            <p>Turkey is one of the most popular Thanksgiving foods.</p>
+            <button onclick="addFavorite('Turkey')">Add to Favorites</button>
+        </div>
+
+        <div class="food">
+            <img src="1025-simple-is-best-dressing-lede.webp" alt="Bread">
+            <h3>stuffing</h3>
+            <p>a quitisential side dish.</p>
+            <button onclick="addFavorite('Rolls')">Add to Favorites</button>
+        </div>
+
+        <div class="food">
+            <img src="Homemade-Mashed-Potatoes-Recipe-1-1200.jpg">
+            <h3>mashed potatos</h3>
+            <p>a classic side with many ways to be prepared.</p>
+            <button onclick="addFavorite('Pumpkin Pie')">Add to Favorites</button>
+        </div>
+
+        <div class="food">
+            <img src="ALR-recipe-13478-sweet-potato-casserole-ii-hero-04-VAT-4x3-49aaf773eaf34dbeb9be808ad74d41eb.jpg">
+            <h3>Sweet Potatoe casserole</h3>
+            <p>Sweet potatoe casserole are a classic Thanksgiving side.</p>
+            <button onclick="addFavorite('Mashed Potatoes')">Add to Favorites</button>
+        </div>
+        
+        <div class="food">
+            <img src="Mac-and-cheese5.jpg">
+            <h3>Mac and cheese</h3>
+            <p>A beloved pasta dish</p>
+            <button onclick="addFavorite('Mashed Potatoes')">Add to Favorites</button>
+        </div>
+        
+        <div class="food">
+            <img src="CrispyBrusselSprouts.avif">
+            <h3>Brussel Sprouts</h3>
+            <p>a well seasoned side dish.</p>
+            <button onclick="addFavorite('Mashed Potatoes')">Add to Favorites</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="favorites">
+        <h2>My Favorite Foods</h2>
+        <ul id="favoriteList"></ul>
+    </div>
+
+    <hr>
+
+    <div id="quiz">
+        <h2>Thanksgiving Trivia</h2>
+
+        <p id="question">When is Thanksgiving celebrated in the United States?</p>
+
+        <button onclick="checkAnswer(1)">November</button>
+        <button onclick="checkAnswer(2)">December</button>
+        <button onclick="checkAnswer(3)">January</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
